@@ -11,6 +11,7 @@ exports.alerts = (req, res, next) => {
     Please check your email for a confirmation.
     If your booking doesn't show up here immediately, try back again in a few minutes.`
   }
+  next()
 }
 
 exports.getOverview = catchAsync(async (req, res, next) => {
